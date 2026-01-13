@@ -19,6 +19,13 @@ body {
   gap: 16px;
 }
 
+#title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
 .book-card {
   border: 1px solid #ccc;
   padding: 16px;
@@ -103,5 +110,17 @@ body {
 #library {
     margin-top: 20px;
     padding-bottom: 10px;
+}
+
+.book-card button {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 6px 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
