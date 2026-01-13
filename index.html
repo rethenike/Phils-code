@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Library</h1>
+    <h1 class="title">My Library</h1>
     <div id="library"></div>
 
     <form id="book-form">
@@ -17,15 +17,17 @@
         <input type="text" id="author" placeholder="Author" required>
         <input type="number" id="pages" placeholder="Pages" required>
         <label>
-            <input type="checkbox" id="read"> Read
+            <input type="checkbox" id="read"> Read?
         </label>
+        <div class="addBtn">
         <button type="submit">Add Book</button>
+        </div>
     </form>
 
 
 
     <script src="script.js" defer></script>
-    
+
 
 </body>
 </html>

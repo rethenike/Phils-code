@@ -16,6 +16,7 @@ const addBookToLibrary = (title, author, pages, read) => {
 
 
 const libraryContainer = document.getElementById('library');
+const bookForm = document.getElementById('book-form');
 
 function displayBooks() {
 
@@ -39,7 +40,6 @@ function displayBooks() {
             toggleRealStatus(book.id);
         });
 
-        card.appendChild(toggleReadButton);
 
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
@@ -48,7 +48,7 @@ function displayBooks() {
         });
 
 
-
+        card.appendChild(toggleReadButton);
         card.appendChild(removeButton);
         libraryContainer.appendChild(card);
     });
@@ -82,6 +82,14 @@ function toggleRealStatus(id) {
         displayBooks();
     }
 }
+
+function initializeDemoBooks() {
+    addBookToLibrary("The Great Gatsby", "F. Scott Fitzgerald", 180, true);
+    addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 281, false);
+    displayBooks();
+}
+
+initializeDemoBooks();
 
 // addBookToLibrary("The Great Gatsby", "F. Scott Fitzgerald", 180, true);
 // addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 281, false);
